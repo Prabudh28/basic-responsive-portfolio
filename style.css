@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',arial;
+    scroll-behavior: smooth;
+}
+/*top button*/
+.logo img{
+    height: 65px;
+    width: 65px;
+}
+
+.top{
+    height:48px;
+    width: 48px;
+    color: #fff;
+    background-color: #0c8775;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top a{
+    color: #ffffff;
+}
+
+
+/*opacity*/
+.opacity{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(23,23, 23,0.75);
+}
+/*Header*/
+header{
+    background-color: #0c8775;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: fixed;
+    height: 9vh;
+    width: 100%;
+    z-index: 9;
+}
+
+/*Main Section*/
+.main-wrapper{
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.main-section{
+    z-index: 3;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+.buttons{
+    z-index: 3;
+}
+.buttons button{
+    padding: 0.9rem 1.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.buttons button a{
+    text-decoration: none;
+}
+.button1 button{
+    background-color: #0c8775;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out; /* applying for which, time,type of transistion*/
+
+}
+.button2 button{
+    color: #0c8775;
+    transition: all 0.3s ease-in-out;
+}
+
+.button1 button:hover{
+    background-color: #fff;
+    color: #0c8775;
+}
+.button2 button:hover{
+    background-color:#0c8775;
+    color: #fff;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    color: black;
+}
+/*Projects section*/
+.projects-wrapper{
+    height:100vh;
+    background-color: rgba(23, 23, 23, 1);
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    border-bottom: solid 4.5px #0c8775;
+    overflow: hidden;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(300px,2fr)); /* fr means fraction of the page*/
+    width: 100%;
+    grid-gap: 30px;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 auto;
+
+}
+
+.card img{
+    height: 75%;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    transition: transform .2s;
+}
+.card img:hover{
+    transform: scale(2);
+}
+.card a{
+    text-decoration: none;
+    color: #0c8775;
+    font-weight: 600;
+    
+}
+.projects-wrapper h1{
+    margin: 30px 0 ;
+}
+
+
+/*hire me*/
+
+.hire-me-wrapper{
+    height: 100vh;
+    background-color: rgba(23,23, 23,1);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hire-me-wrapper h1{
+    margin: 12px 0;
+    font-size: 3rem;
+}
+
+.hire-me-wrapper ol{
+    text-align: left;
+    padding: 30px;
+    line-height: 2;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto; /*we have given margin of 0 and left the brower 
+    to make it auto center(when we dont want to given margins from topor btm horizontal center)*/
+    height: 48vh;
+}
+
+.form form input{
+    padding: 12px;
+    border-radius: 9px;
+    border: none; /*to remove ugly border*/
+    transition: all 0.3s ease-in-out;
+}
+.form form input:focus{/*to respond whe we click*/
+    box-shadow: 0 0 3px 3px #0c8775; /*width blur */
+}
+
+
+.form form textarea{
+    padding: 12px;
+    border-radius: 9px;
+    border: none; /*to remove ugly border*/
+    transition: all 0.3s ease-in-out;
+}
+.form form textarea:focus{
+    box-shadow: 0 0 3px 3px #0c8775; /*width blur */
+
+}
+.form form button{
+    background-color: #0c8775;
+    border: none;
+    border-radius: 9px;
+    padding: 9px;
+    margin: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.form form button:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: #0c8775;
+    height:9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /*horizontally center*/
+    font-size: 1.8rem;
+}
+
+footer i{
+    margin-right: 15px;
+    
+}
+
+@media screen and (max-width: 480px)/*this query is used to m
+ake websit responsive on all screen sizes*/{
+    .logo{
+        font-size: 0.9rem;
+    }
+    nav ul{
+        font-size: 0.9rem;
+        width: 15rem;
+    }
+    .main-section p{
+        font-size: 1.9rem;
+    }
+    .card{
+        width: 180px;
+        height: 180px;
+    }
+    .hire-me-wrapper h1{
+        font-size: 2.1rem;
+    }
+
+}
